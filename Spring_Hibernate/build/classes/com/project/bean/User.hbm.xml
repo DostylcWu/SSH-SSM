@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.project.bean.UserBean" table="t_user">
+		<!-- 映射id -->
+		<id name="id" column="u_id">
+			<generator class="increment"/>
+		</id>	
+		<!-- name:实体bean对应的属性名字  column:数据库字段名字 -->
+		<property name="name"  column="u_name"></property>
+		<property name="pwd"  column="u_pwd"></property>
+	</class>
+</hibernate-mapping>
